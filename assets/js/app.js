@@ -19,7 +19,7 @@ function getParticleSpeed() {
   else if (window.screen.availWidth >= 980) {
     particleSpeed = 4;
   }
-  else if (window.screen.availWidth >= 736) {
+  else if (window.screen.availWidth >= 480) {
     particleSpeed = 3;
   }
   else {
