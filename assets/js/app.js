@@ -11,8 +11,25 @@ particlesJS.load('particles-js', 'particles.json', function() {
 
 /* Otherwise just put the config content (json): */
 
+function getParticleSpeed() {
+  var particleSpeed = 6;
+  if (window.screen.availWidth >= 1280) {
+    particleSpeed = 5;
+  }
+  else if (window.screen.availWidth >= 980) {
+    particleSpeed = 4;
+  }
+  else if (window.screen.availWidth >= 736) {
+    particleSpeed = 3;
+  }
+  else {
+    particleSpeed = 2;
+  }
+  return particleSpeed;
+}
+
 particlesJS('particles-js',
-  
+
   {
     "particles": {
       "number": {
@@ -69,7 +86,7 @@ particlesJS('particles-js',
       },
       "move": {
         "enable": true,
-        "speed": 6,
+        "speed": getParticleSpeed(),
         "direction": "none",
         "random": false,
         "straight": false,
