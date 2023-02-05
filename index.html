@@ -23,7 +23,7 @@
 		<!-- Header -->
 		<header id="header" class="alt">
 			<span class="logo"><img src="images/icons8-heartbeat-64.png" alt="" /></span>
-			<h1>Aniqa Riasat</h1>
+			<h1>I'm Aniqa Riasat.</h1>
 			<p>I'm a Data Analyst well reserved in SQL, Power BI, Excel, <br> Business Intelligence & Data
 				Visualization</a>.
 			</p>
@@ -34,7 +34,7 @@
 			<ul>
 				<li><a href="#intro" class="active">Introduction</a></li>
 				<li><a href="#first">Skills</a></li>
-				<!-- <li><a href="#second">Second Section</a></li> -->
+				<li><a href="#second">Certifications</a></li>
 				<li><a href="#cta">Contact</a></li>
 			</ul>
 		</nav>
@@ -98,6 +98,43 @@
 			</section>
 
 			<!-- Second Section -->
+			<section id="second" class="main special">
+				<header class="major">
+					<h2>Certifications</h2>
+				</header>
+				<ul class="features">
+					<li>
+						<div data-iframe-width="150" data-iframe-height="270"
+							data-share-badge-id="7dcc3306-0956-4086-a169-d6312c1cb75a"
+							data-share-badge-host="https://www.credly.com"></div>
+						<script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+					</li>
+					<li>
+						<div data-iframe-width="150" data-iframe-height="270"
+							data-share-badge-id="f26cb650-e22c-4ba0-8fd2-55ff035649bf"
+							data-share-badge-host="https://www.credly.com"></div>
+						<script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+					</li>
+					<li>
+						<div data-iframe-width="150" data-iframe-height="270"
+							data-share-badge-id="be32bb67-44a8-4952-932c-f872b118220a"
+							data-share-badge-host="https://www.credly.com"></div>
+						<script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+					</li>
+					<li>
+						<div data-iframe-width="150" data-iframe-height="270"
+							data-share-badge-id="36995e15-ebf7-47fa-9699-9e8dd31aff3b"
+							data-share-badge-host="https://www.credly.com"></div>
+						<script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+					</li>
+					<li>
+						<div data-iframe-width="150" data-iframe-height="270"
+							data-share-badge-id="926baccd-8018-480d-a09a-0a734101bcea"
+							data-share-badge-host="https://www.credly.com"></div>
+						<script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+					</li>
+				</ul>
+			</section>
 
 			<!-- Contact -->
 			<section id="cta" class="main special">
@@ -115,7 +152,11 @@
 							<input type="email" name="email" id="email" required />
 						</div>
 						<div class="field">
-							<label for="message">Message</label>
+							<label for="subject">Subject</label>
+							<input type="text" name="subject" id="subject" required />
+						</div>
+						<div class="field">
+							<label for="message">Your Message</label>
 							<textarea name="message" id="message" rows="4" required></textarea>
 						</div>
 					</div>
@@ -160,10 +201,12 @@
 			event.preventDefault();
 			var _email = $("#email").val().trim();
 			var _message = $("#message").val().trim();
+			var _subject = $("#subject").val().trim();
 			var _name = $("#name").val().trim();
 			if (_email == null || _email == '' ||
 				_name == null || _name == '' ||
-				_message == null || _message == '') {
+				_message == null || _message == '' ||
+				_subject == null || _subject == '') {
 				$("#submission-status").text("Please provide data in all fields.");
 				return;
 			}
@@ -175,7 +218,8 @@
 				data: {
 					email: _email,
 					message: _message,
-					name: _name
+					name: _name,
+					subject: _subject
 				},
 				success: function () {
 					$("#submission-status").text("Submission successfull!");
