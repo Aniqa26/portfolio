@@ -2382,7 +2382,7 @@ input[type="radio"]:focus+label:before {
 }
 
 .icon.major {
-	border: solid 1px;
+	border: solid 4px;
 	display: inline-block;
 	border-radius: 100%;
 	padding: 0.65em;
@@ -2417,23 +2417,23 @@ input[type="radio"]:focus+label:before {
 }
 
 .icon.style1 {
-	color: #8b8b8b;
+	color: #6c6c6c;
 }
 
 .icon.style2 {
-	color: #8b8b8b;
+	color: #6c6c6c;
 }
 
 .icon.style3 {
-	color: #8b8b8b;
+	color: #6c6c6c;
 }
 
 .icon.style4 {
-	color: #8b8b8b;
+	color: #6c6c6c;
 }
 
 .icon.style5 {
-	color: #8b8b8b;
+	color: #6c6c6c;
 }
 
 @media screen and (max-width: 1680px) {
@@ -3524,11 +3524,11 @@ body.is-preload #header.alt .logo {
 /* Main */
 
 body.is-preload #main {
-	background-color: rgba(240, 240, 240, 0);
+	background-color: rgba(235, 235, 235, 0);
 }
 
 #main {
-	background-color: rgba(240, 240, 240, 0.8);
+	background-color: rgba(235, 235, 235, 0.9);
 	color: #000000;
 	border-radius: 0.25em;
 
@@ -3727,11 +3727,13 @@ body.is-preload #main {
 }
 
 #main .icon.major {
-	border-color: #d8d8d8;
+	/* border-color: #d8d8d8; */
+	border-color: transparent;
 }
 
 #main .icon.major:before {
-	border-color: #d8d8d8;
+	
+	border: solid 4px #9e9e9e;
 }
 
 #main .icon.alt {
