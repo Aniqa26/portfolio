@@ -3222,7 +3222,7 @@ table.alt tbody tr td {
 }
 
 #header.alt {
-	padding: 7em 5em 4em 5em;
+	padding: 4em 5em 1em 5em;
 }
 
 #header.alt h1 {
@@ -3362,9 +3362,9 @@ body.is-preload #header.alt .logo {
 
 /* Nav */
 
-/* body.is-preload #nav {
-	background-color: rgba(51, 51, 51, 0);
-} */
+body.is-preload #nav {
+	opacity: 0;
+}
 
 /* #main {
 	background-color: rgba(240, 240, 240, 0.8);
@@ -3382,20 +3382,11 @@ body.is-preload #header.alt .logo {
 } */
 
 #nav {
-	/* -moz-transition: background-color 3s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
-	-webkit-transition: background-color 3s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
-	-ms-transition: background-color 3s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
-	transition: background-color 3s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
-	-moz-transition-delay: 1s;
-	-webkit-transition-delay: 1s;
-	-ms-transition-delay: 1s;
-	transition-delay: 1s; 
-	background-color: rgb(51, 51, 51, 1);*/
 	
-	-moz-transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
-	-webkit-transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
-	-ms-transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
-	transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
+	-moz-transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease, opacity 3s ease;
+	-webkit-transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease, opacity 3s ease;
+	-ms-transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease, opacity 3s ease;
+	transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease, opacity 3s ease;
 	background-color: #333333;
 	color: #232323;
 	position: absolute;
@@ -3407,6 +3398,7 @@ body.is-preload #header.alt .logo {
 	border-top-right-radius: 0.25em;
 	cursor: default;
 	text-align: center;
+	opacity: 1;
 }
 
 #nav input,
