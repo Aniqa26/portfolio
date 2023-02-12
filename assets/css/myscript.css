@@ -303,3 +303,15 @@ input[type="radio"]+label:before {
     color: rgba(255, 255, 255, 0.5) !important;
     opacity: 1.0;
 }
+
+.skills>li>h3{
+    font-weight: 500;
+}
+
+.skills>li>p{
+    text-align: justify;
+}
+
+.skills>li>img{
+    opacity: 0.7;
+}
