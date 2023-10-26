@@ -11,5 +11,5 @@ Do explore my [website](https://aniqa26.github.io/portfolio/) and [LinkedIn](htt
 *** 
 # Projects
 
-## [120 Years of Olympic History](https://github.com/Aniqa26/SQL-Projects/120%20Years%20of%20Olympic%20History)
+## [120 Years of Olympic History](https://github.com/Aniqa26/SQL-Projects#120-years-of-olympic-history)
 The Olympics comprises all the Games from Athens 1986 to Rio 2016. The Olympics is more than just a quadrennial multi-sport world championship. It is a lense through which to understand global history, including shifting geopolitical power dynamics, women’s empowerment, and the evolving values of society.
