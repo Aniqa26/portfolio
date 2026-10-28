@@ -1,247 +1,288 @@
-<!DOCTYPE HTML>
-<!--
-	Stellar by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
 <head>
-	<title>Aniqa Riasat | Software Engineer | Data Analyst</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/myscript.css" />
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<noscript>
-		<link rel="stylesheet" href="assets/css/noscript.css" />
-	</noscript>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aniqa Riasat — Data Engineer</title>
+<meta name="description" content="Data Engineer portfolio modeled as an interactive lineage graph — Microsoft Fabric, Databricks, SSIS, Power BI, Azure and AWS.">
+<script>
+  const t = localStorage.getItem('theme') || (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+  document.documentElement.dataset.theme = t;
+</script>
+<link rel="stylesheet" href="css/style.css">
 </head>
+<body id="top">
 
-<body class="is-preload">
-	<div id="particles-js"></div>
-	<div id="wrapper">
-		<!-- Header -->
-		<header id="header" class="alt">
-			<span class="logo"><img src="images/icons8-heartbeat-64.png" alt="" /></span>
-			<h1>Hi! I'm Aniqa Riasat</h1>
-			<p>Enthusiastic coder & analyst, driven by transforming data into actionable insights.</p>.
-			<!-- <p>I'm a Software Engineer & Data Analyst well reserved in C#, SQL, Excel,<br>
-				Power BI, Business Intelligence & Data Visualizations</a>. 
-			</p>-->
-		</header>
+<header class="topbar">
+  <nav class="pill">
+    <a href="#top" class="brand"><span class="mono-badge">AR</span><span class="brand-name">Aniqa Riasat</span></a>
+    <div class="links">
+      <a href="#lineage">Lineage</a>
+      <a href="#experience">Experience</a>
+      <a href="#work">Work</a>
+      <a href="#certifications">Certifications</a>
+    </div>
+    <div class="icons">
+      <a href="https://github.com/Aniqa26" target="_blank" rel="noopener" aria-label="GitHub">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/aniqariasat" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 448 512" width="16" height="16" fill="currentColor"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+      </a>
+      <a href="mailto:aniqa.riasat@unb.ca" aria-label="Email">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+      </a>
+      <button id="themeToggle" class="theme-btn" aria-label="Toggle light/dark theme">
+        <svg class="i-sun" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.900 4.900l1.400 1.400M17.700 17.700l1.400 1.400M2 12h2M20 12h2M4.900 19.100l1.400-1.400M17.700 6.300l1.400-1.400"/></svg>
+        <svg class="i-moon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.800A9 9 0 1 1 11.200 3a7 7 0 0 0 9.800 9.800z"/></svg>
+      </button>
+    </div>
+  </nav>
+</header>
 
-		<!-- Nav -->
-		<nav id="nav" class="transition-animation">
-			<ul>
-				<li><a href="#intro" class="active">Introduction</a></li>
-				<li><a href="#first">Skills</a></li>
-				<li><a href="#second">Certifications</a></li>
-				<li><a href="#cta">Contact</a></li>
-			</ul>
-		</nav>
+<section class="hero">
+  <div class="beams" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+  <div class="hero-inner">
+    <span class="sql-pill">SELECT * FROM aniqa.career WHERE passion = 'data_engineering';</span>
+    <h1>Hi, I'm <span class="grad">Aniqa Riasat</span><span class="cursor">_</span></h1>
+    <p class="hero-sub">Data Engineer specializing in scalable data pipelines, lakehouses, and cloud-based data platforms — enabling reliable data integration and actionable business intelligence.</p>
+    <p class="hero-body">Data Engineer with hands-on experience designing, building, and optimizing scalable data pipelines, lakehouses, and analytics solutions. Experienced in Microsoft Fabric, PySpark, Python, SQL, API integrations, data orchestration, and medallion architecture, with expertise in incremental data ingestion, data transformation, dimensional modeling, and ETL/ELT workflows. Skilled in developing reliable data integration processes, implementing data quality and audit mechanisms, optimizing performance, and delivering analytics-ready datasets and Power BI reporting solutions. Strong focus on building scalable, maintainable, and efficient data platforms that transform complex data into actionable business insights.</p>
+    <div class="hero-cta">
+      <a class="btn primary" href="#lineage"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M19 12l-7 7-7-7"/></svg> Explore the lineage graph</a>
+      <a class="btn" href="https://www.linkedin.com/in/aniqariasat" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn" href="https://github.com/Aniqa26" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn" href="mailto:aniqa.riasat@unb.ca">Email</a>
+    </div>
+  </div>
+</section>
 
-		<!-- Main -->
-		<div id="main" class="transition-animation">
-			<!-- Introduction -->
-			<section id="intro" class="main special">
-				<header class="major">
-					<h2>Introduction</h2>
-				</header>
-				<p style="text-align: justify;">
-					As a highly experienced software engineer with a background in database design and over six years of
-					experience in the industry, I have a diverse skill set that makes me well-suited for the role of a
-					data analyst. With a strong understanding of programming languages such as C#, .NET, Javascript,
-					JQuery, HTML, CSS, and database languages like SQL, I am equipped to tackle even the most complex
-					data challenges.<br><br>
-					My experience in ETL tools, Analysis Services Cubes, Excel, and Power BI has allowed me to gather
-					information and present it in a meaningful way through reports and dashboards. I have a talent for
-					making sense of large and complex data sets, and I understand the importance of data governance and
-					security. I always ensure that the data I work with is secure and meets the needs of the
-					business.<br><br>
-					My expertise in software engineering and database design, combined with my ability to turn data into
-					actionable insights, make me a valuable asset to any organization looking to leverage data to drive
-					results. I am confident in my ability to communicate complex ideas clearly and concisely, and I take
-					pride in my ability to present data in a way that is easy to understand and interact with.<br><br>
-					In short, I am a results-driven data analyst with a passion for turning data into insights that
-					drive business decisions. I look forward to contributing my skills and expertise to impact the world
-					positively.
-				</p>
-			</section>
+<section id="lineage" class="wrap wide">
+  <header class="head">
+    <span class="kicker">// dag · dbt-style lineage</span>
+    <h2>Everything I do, expanded from one node</h2>
+    <p>Start at me and branch out into hard skills, tech stack, soft skills, experience, and certifications &amp; education. Click any node to expand or collapse it.</p>
+  </header>
 
-			<!-- First Section -->
-			<section id="first" class="main special">
-				<header class="major">
-					<h2>Skills</h2>
-				</header>
-				<ul class="features skills">
-					<li>
-						<img src="images/mind-map-96.png">
-						<h3>Data Cleaning</h3>
-						<p>
-							Proficient in collecting, cleaning, and transforming large datasets into a usable form. This
-							includes handling missing values, dealing with duplicate records, and merging
-							data from multiple sources.
-						</p>
-					</li>
-					<li>
-						<img src="images/data-visualization-96.png">
-						<h3>Data Visualization</h3>
-						<p>
-							Able to effectively communicate insights from data through visualizations. This includes
-							creating charts, graphs, and maps that clearly communicate patterns, trends, and outliers in
-							the data.
-						</p>
-					</li>
-					<li>
-						<img src="images/statistical-analysis-96.png">
-						<h3>Statistical Analysis</h3>
-						<p>
-							Have a solid understanding of statistical concepts, including hypothesis
-							testing, regression analysis, and time-series analysis to draw meaningful
-							insights and make predictions based on data.
-						</p>
-					</li>
-				</ul>
-			</section>
+  <div class="graph" id="graph">
+    <div class="viewport" id="viewport">
+      <svg class="edges" id="edges"></svg>
+      <div class="nodes" id="nodes"></div>
+    </div>
 
-			<!-- Second Section -->
-			<section id="second" class="main special">
-				<header class="major">
-					<h2>Certifications</h2>
-				</header>
-				<ul class="features">
-					<li>
-						<div data-iframe-width="150" data-iframe-height="270"
-							data-share-badge-id="7dcc3306-0956-4086-a169-d6312c1cb75a"
-							data-share-badge-host="https://www.credly.com"></div>
-						<script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-					</li>
-					<li>
-						<div data-iframe-width="150" data-iframe-height="270"
-							data-share-badge-id="f26cb650-e22c-4ba0-8fd2-55ff035649bf"
-							data-share-badge-host="https://www.credly.com"></div>
-						<script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-					</li>
-					<li>
-						<div data-iframe-width="150" data-iframe-height="270"
-							data-share-badge-id="be32bb67-44a8-4952-932c-f872b118220a"
-							data-share-badge-host="https://www.credly.com"></div>
-						<script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-					</li>
-					<li>
-						<div data-iframe-width="150" data-iframe-height="270"
-							data-share-badge-id="36995e15-ebf7-47fa-9699-9e8dd31aff3b"
-							data-share-badge-host="https://www.credly.com"></div>
-						<script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-					</li>
-					<li>
-						<div data-iframe-width="150" data-iframe-height="270"
-							data-share-badge-id="926baccd-8018-480d-a09a-0a734101bcea"
-							data-share-badge-host="https://www.credly.com"></div>
-						<script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-					</li>
-				</ul>
-			</section>
+    <div class="graph-top">
+      <div class="glass hintbar"><svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 9.700a.5.5 0 0 1 .7-.7l11 4.500a.5.5 0 0 1-.1.900l-4.300 1a1 1 0 0 0-.8.800l-1 4.300a.5.5 0 0 1-1 .1z"/></svg>click a node to expand or collapse it · drag to pan · ctrl + scroll to zoom</div>
+      <div class="graph-actions">
+        <button class="gbtn" id="expandAll">Expand all</button>
+        <button class="gbtn" id="resetGraph">Reset</button>
+      </div>
+    </div>
 
-			<!-- Contact -->
-			<section id="cta" class="main special">
-				<header class="major">
-					<h2>Contact</h2>
-				</header>
-				<form id="contact-form" method="post" action="#">
-					<div class="fields">
-						<div class="field half">
-							<label for="name">Name</label>
-							<input type="text" name="name" id="name" required />
-						</div>
-						<div class="field half">
-							<label for="email">Email</label>
-							<input type="email" name="email" id="email" required />
-						</div>
-						<div class="field">
-							<label for="subject">Subject</label>
-							<input type="text" name="subject" id="subject" required />
-						</div>
-						<div class="field">
-							<label for="message">Your Message</label>
-							<textarea name="message" id="message" rows="4" required></textarea>
-						</div>
-					</div>
-					<ul class="actions">
-						<li><input id="contact-submit-btn" type="submit" value="Send Message" class="primary" /></li>
-						<li><input id="contact-reset-btn" type="reset" value="Reset" /></li>
-					</ul>
-					<div>
-						<p id="submission-status"></p>
-					</div>
-				</form>
-			</section>
+    <div class="legend glass">
+      <span><i class="d n-hard"></i>Hard skills</span><span><i class="d n-tech"></i>Tech stack</span><span><i class="d n-soft"></i>Soft skills</span><span><i class="d n-expo"></i>Experience</span><span><i class="d n-edu"></i>Certs &amp; education</span>
+    </div>
 
-		</div>
+    <div class="controls glass">
+      <button id="zoomIn" aria-label="Zoom in">+</button>
+      <button id="zoomOut" aria-label="Zoom out">−</button>
+      <button id="fitView" aria-label="Fit view">⤢</button>
+    </div>
 
-		<!-- Footer -->
-		<footer id="footer">
-			<section>
-				<ul class="icons" style="text-align: center;">
-					<li><a href="https://github.com/Aniqa26" class="icon brands fa-github alt"><span
-								class="label">GitHub</span></a></li>
-					<li><a href="https://www.linkedin.com/in/aniqariasat/" class="icon brands fa-linkedin alt"><span
-								class="label">fa-linkedIn</span></a></li>
-					<li><a href="mailto:aniqariasat@gmail.com" class="icon solid fa-envelope alt"><span
-								class="label">Email</span></a></li>
-				</ul>
-			</section>
-		</footer>
-	</div>
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.scrollex.min.js"></script>
-	<script src="assets/js/jquery.scrolly.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
-	<script src="assets/js/particles.js"></script>
-	<script src="assets/js/app.js"></script>
-	<script>
-		$("#contact-form").on('submit', function (event) {
-			event.preventDefault();
-			var _email = $("#email").val().trim();
-			var _message = $("#message").val().trim();
-			var _subject = $("#subject").val().trim();
-			var _name = $("#name").val().trim();
-			if (_email == null || _email == '' ||
-				_name == null || _name == '' ||
-				_message == null || _message == '' ||
-				_subject == null || _subject == '') {
-				$("#submission-status").text("Please provide data in all fields.");
-				return;
-			}
+    <aside class="detail glass" id="detail" aria-live="polite"></aside>
+  </div>
+</section>
 
-			$.ajax({
-				url: "https://formspree.io/f/xbjelwqo",
-				method: "POST",
-				dataType: "json",
-				data: {
-					email: _email,
-					message: _message,
-					name: _name,
-					subject: _subject
-				},
-				success: function () {
-					$("#submission-status").text("Submission successfull!");
-					//$("form#updatejob").hide(function(){$("div.success").fadeIn();});
-				},
-				error: function (XMLHttpRequest, textStatus, errorThrown) {
-					$("#submission-status").text("Something went wrong. Please try again later!");
-					//alert("Status: " + textStatus); alert("Error: " + errorThrown); 
-				}
-			});
-		});
-		$("#contact-reset-btn").on('click', function () {
-			$("#submission-status").text("");
-		});
-	</script>
+<div class="sep"></div>
+
+<section id="experience" class="wrap">
+  <header class="head">
+    <span class="kicker">// exposures</span>
+    <h2>Where the pipelines run in production</h2>
+    <p>Every role below is where the tech stack actually gets deployed — the exposures downstream of the lineage graph.</p>
+  </header>
+
+  <div class="timeline">
+    <article class="job">
+      <span class="node-dot"></span>
+      <div class="job-card">
+        <div class="job-head">
+          <div><h3>Solutions Specialist — Data Engineer</h3><p class="org">Deloitte</p></div>
+          <div class="meta"><span><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>Jan 2026 – Now</span><span><svg viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>Canada</span></div>
+        </div>
+        <ul>
+          <li>Developed a Microsoft Fabric data lakehouse with Medallion architecture, turning client data into a scalable analytics platform.</li>
+          <li>Designed end-to-end Raw → Bronze → Silver → Gold pipelines for ingestion, transformation and orchestration across 20+ tables.</li>
+          <li>Built Fabric notebooks and orchestrated workflows across Lakehouse layers using OneLake and Fabric warehouse.</li>
+          <li>Preparing curated Gold-layer datasets as the foundation for Power BI reporting and analytics.</li>
+        </ul>
+        <div class="badges"><span>Microsoft Fabric</span><span>OneLake</span><span>Medallion</span><span>Power BI</span><span>Notebooks</span></div>
+      </div>
+    </article>
+
+    <article class="job">
+      <span class="node-dot"></span>
+      <div class="job-card">
+        <div class="job-head">
+          <div><h3>Data Integrity Specialist</h3><p class="org">MediaRadar, Inc</p></div>
+          <div class="meta"><span><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>Nov 2024 – Nov 2025</span><span><svg viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>Remote</span></div>
+        </div>
+        <ul>
+          <li>Coordinated data quality across multiple projects, ensuring accuracy, consistency and integrity of advertising data.</li>
+          <li>Validated complex pipelines and transformations with Databricks, SQL Server, PostgreSQL and Elasticsearch.</li>
+          <li>Automated validation and built reusable SQL scripts for regression testing between source and target systems.</li>
+        </ul>
+        <div class="badges"><span>Databricks</span><span>SQL Server</span><span>PostgreSQL</span><span>Elasticsearch</span></div>
+      </div>
+    </article>
+
+    <article class="job">
+      <span class="node-dot"></span>
+      <div class="job-card">
+        <div class="job-head">
+          <div><h3>Research Assistant</h3><p class="org">University of New Brunswick · National Research Council Canada</p></div>
+          <div class="meta"><span><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>Sep 2023 – Dec 2025</span><span><svg viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>Fredericton, NB</span></div>
+        </div>
+        <ul>
+          <li>Created pipelines to identify and classify human activity from 3D skeleton data captured by depth cameras.</li>
+          <li>Extracted patterns from complex temporal data with sequential pattern mining and feature selection.</li>
+          <li>Developed and assessed Random Forest, LSTM and Graph Convolutional Network models for spatial-temporal analysis.</li>
+        </ul>
+        <div class="badges"><span>Python</span><span>LSTM</span><span>GCN</span><span>Random Forest</span><span>SQL</span></div>
+      </div>
+    </article>
+
+    <article class="job">
+      <span class="node-dot"></span>
+      <div class="job-card">
+        <div class="job-head">
+          <div><h3>Senior Software Engineer / Data Analyst</h3><p class="org">Global Rescue Pvt Ltd.</p></div>
+          <div class="meta"><span><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>Jan 2022 – Aug 2023</span><span><svg viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>Islamabad, Pakistan</span></div>
+        </div>
+        <ul>
+          <li>Optimized SQL queries, ETL processes and relational systems, increasing data retrieval effectiveness by 30%.</li>
+          <li>Reduced database storage by 10GB and backup costs by 30% with an Amazon S3-based archive for legacy attachments.</li>
+          <li>Automated business operations with SQL, .NET and Dynamics CRM, cutting sales team manual work by 20%.</li>
+          <li>Built reporting solutions with SSIS, SSRS and Power BI.</li>
+        </ul>
+        <div class="badges"><span>SQL</span><span>.NET</span><span>Dynamics CRM</span><span>AWS S3</span><span>SSIS</span><span>SSRS</span><span>Power BI</span></div>
+      </div>
+    </article>
+
+    <article class="job">
+      <span class="node-dot"></span>
+      <div class="job-card">
+        <div class="job-head">
+          <div><h3>Software Engineer</h3><p class="org">Global Rescue Pvt Ltd.</p></div>
+          <div class="meta"><span><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>Jul 2018 – Dec 2021</span><span><svg viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>Islamabad, Pakistan</span></div>
+        </div>
+        <ul>
+          <li>Developed and optimized enterprise applications and data workflows with .NET, SQL Server and Dynamics CRM for sales and operations.</li>
+          <li>Redesigned commission calculation and sales workflows, saving hundreds of hours a year and cutting manual labor by 70%.</li>
+          <li>Built SQL- and VBA-based automation for routine data processing and reporting; worked in Agile/Scrum teams.</li>
+        </ul>
+        <div class="badges"><span>.NET</span><span>SQL Server</span><span>Dynamics CRM</span><span>VBA</span></div>
+      </div>
+    </article>
+
+    <article class="job">
+      <span class="node-dot"></span>
+      <div class="job-card">
+        <div class="job-head">
+          <div><h3>Associate Software Engineer</h3><p class="org">Global Rescue Pvt Ltd.</p></div>
+          <div class="meta"><span><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>Aug 2016 – Jun 2018</span><span><svg viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>Islamabad, Pakistan</span></div>
+        </div>
+        <ul>
+          <li>Built and managed SSIS ETL pipelines that cleaned, transformed and loaded datasets for analytics and reporting.</li>
+          <li>Created management reports and dashboards with Power BI and SSRS.</li>
+          <li>Supported legacy data and system migrations with minimal disruption.</li>
+        </ul>
+        <div class="badges"><span>SSIS</span><span>SSRS</span><span>SQL Server</span><span>Power BI</span></div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<div class="sep"></div>
+
+<section id="work" class="wrap">
+  <header class="head">
+    <span class="kicker">// models · selected work</span>
+    <h2>Projects &amp; case studies</h2>
+    <p>Problem, approach and outcome for the work I'm proudest of.</p>
+  </header>
+  <div class="cards">
+    <article class="card">
+      <span class="tag">Deloitte</span>
+      <h3>Microsoft Fabric Lakehouse</h3>
+      <p><b>Problem</b> Client data needed to become a scalable analytics platform.</p>
+      <p><b>Approach</b> Medallion lakehouse with Raw → Bronze → Silver → Gold pipelines, Fabric notebooks and OneLake.</p>
+      <p><b>Outcome</b> Curated Gold datasets powering Power BI across 20+ tables.</p>
+    </article>
+    <article class="card">
+      <span class="tag">MSc project</span>
+      <h3>DaskDB Distributed Caching</h3>
+      <p><b>Problem</b> Big data queries were slow and resource heavy.</p>
+      <p><b>Approach</b> In-memory distributed caching for DaskDB using Memcached, MySQL and Python.</p>
+      <p><b>Outcome</b> 40–60% faster queries, 50% less compute overhead, 35% fewer resources.</p>
+    </article>
+    <article class="card">
+      <span class="tag">Research · UNB &amp; NRC</span>
+      <h3>Human Activity Recognition</h3>
+      <p><b>Problem</b> Classify activities from complex temporal 3D skeleton data.</p>
+      <p><b>Approach</b> Sequential pattern mining and feature selection feeding Random Forest, LSTM and GCN models.</p>
+      <p><b>Outcome</b> Assessed spatial-temporal models for activity analysis.</p>
+    </article>
+    <article class="card">
+      <span class="tag">MediaRadar</span>
+      <h3>Data Quality Automation</h3>
+      <p><b>Problem</b> Keeping advertising data accurate across many pipelines.</p>
+      <p><b>Approach</b> Reusable SQL regression scripts across Databricks, SQL Server, PostgreSQL and Elasticsearch.</p>
+      <p><b>Outcome</b> Automated source-to-target validation workflows.</p>
+    </article>
+    <article class="card">
+      <span class="tag">Global Rescue</span>
+      <h3>S3 Data Archive Solution</h3>
+      <p><b>Problem</b> Legacy attachments bloated the main database.</p>
+      <p><b>Approach</b> Amazon S3-based archive to offload them.</p>
+      <p><b>Outcome</b> 10GB less storage and 30% lower backup costs.</p>
+    </article>
+    <article class="card">
+      <span class="tag">Global Rescue</span>
+      <h3>Commission &amp; Sales Automation</h3>
+      <p><b>Problem</b> Commission calculation was manual and slow.</p>
+      <p><b>Approach</b> Redesigned workflows with SQL, .NET, VBA and Dynamics CRM.</p>
+      <p><b>Outcome</b> Hundreds of hours saved yearly; 70% less manual work.</p>
+    </article>
+  </div>
+</section>
+
+<div class="sep"></div>
+
+<section id="certifications" class="wrap">
+  <header class="head">
+    <span class="kicker">// tests &amp; seeds</span>
+    <h2>Certifications &amp; education</h2>
+    <p>The validated layer of the graph — credentials that passed, and the roots the rest of the stack grew from.</p>
+  </header>
+  <h4 class="sub">Certifications</h4>
+  <div class="certs">
+    <div class="cert"><span class="pass"><svg viewBox="0 0 24 24"><circle cx="12" cy="9" r="6"/><path d="M8.5 14 7 22l5-3 5 3-1.500-8"/></svg></span><div><b>Databricks Certified Data Engineer Associate</b><small>Databricks · Oct 2026</small></div></div>
+    <div class="cert"><span class="pass"><svg viewBox="0 0 24 24"><circle cx="12" cy="9" r="6"/><path d="M8.5 14 7 22l5-3 5 3-1.500-8"/></svg></span><div><b>Fabric Data Engineer Associate</b><small>Microsoft · Sep 2026</small></div></div>    <div class="cert"><span class="pass"><svg viewBox="0 0 24 24"><circle cx="12" cy="9" r="6"/><path d="M8.5 14 7 22l5-3 5 3-1.500-8"/></svg></span><div><b>Azure AI Fundamentals</b><small>Microsoft · Feb 2023</small></div></div>
+    <div class="cert"><span class="pass"><svg viewBox="0 0 24 24"><circle cx="12" cy="9" r="6"/><path d="M8.5 14 7 22l5-3 5 3-1.500-8"/></svg></span><div><b>Power BI Data Analyst Associate</b><small>Microsoft · Jan 2023</small></div></div>
+    <div class="cert"><span class="pass"><svg viewBox="0 0 24 24"><circle cx="12" cy="9" r="6"/><path d="M8.5 14 7 22l5-3 5 3-1.500-8"/></svg></span><div><b>Azure Data Fundamentals</b><small>Microsoft · Nov 2022</small></div></div>
+    <div class="cert"><span class="pass"><svg viewBox="0 0 24 24"><circle cx="12" cy="9" r="6"/><path d="M8.5 14 7 22l5-3 5 3-1.500-8"/></svg></span><div><b>Dynamics 365 Fundamentals (CRM)</b><small>Microsoft · Nov 2022</small></div></div>
+    <div class="cert"><span class="pass"><svg viewBox="0 0 24 24"><circle cx="12" cy="9" r="6"/><path d="M8.5 14 7 22l5-3 5 3-1.500-8"/></svg></span><div><b>AWS Certified Cloud Practitioner</b><small>Amazon Web Services · Oct 2022</small></div></div>
+  </div>
+  <h4 class="sub">Education</h4>
+  <div class="certs two">
+    <div class="cert"><span class="pass edu"><svg viewBox="0 0 24 24"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 2.500 9 2.500 12 0v-5"/></svg></span><div><b>M.Sc. Computer Science</b><small>University of New Brunswick · 2023 – 2025 · CGPA 4.3/4.3</small></div></div>
+    <div class="cert"><span class="pass edu"><svg viewBox="0 0 24 24"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 2.500 9 2.500 12 0v-5"/></svg></span><div><b>B.Eng. Computer Engineering</b><small>NUST, Islamabad · 2012 – 2016 · CGPA 3.69/4.00</small></div></div>
+  </div>
+</section>
+
+<footer>
+  <p>© <span id="year"></span> Aniqa Riasat · Canada · <a href="mailto:aniqa.riasat@unb.ca">aniqa.riasat@unb.ca</a></p>
+</footer>
+
+<script src="js/main.js"></script>
 </body>
-
 </html>
